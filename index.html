@@ -1,16 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <title>Apache Tomcat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헬스 플랫폼</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 연결 -->
 </head>
-
 <body>
-<h1>씩씩팀</h1>
-<h2>20213009 염승욱(팀장)</h2>
-<h2>20233016 설효주<h2>
+    <!-- 네비게이션 바 -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo_black.jpg" alt="로고" class="logo">
+            </div>
+            <ul class="nav-bar">
+                <li><a href="#board">게시판</a></li>
+                <li><a href="#journal">나의 운동일지</a></li>
+                <li><a href="#methods">운동방법</a></li>
+                <!-- 로그인 링크 수정: 새 창에서 login.html 열기 -->
+                <li><a href="login.html" target="_blank">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- 메인 메시지 섹션 -->
+    <section class="hero-section">
+        <h1>운동이 쉬워진다.<br>WOSS 하나면 운동 고민 끝</h1>
+        <p>개인 맞춤형 운동 계획부터 기록까지, 운동 고민을 해결하세요.</p>
+        <button class="cta-button">운동 계획 세우기</button>
+    </section>
 
+    <!-- 메인 콘텐츠 섹션 -->
+    <main>
+      <!-- 게시판 섹션 -->
+    <section class="section-container">
+        <div class="content">
+            <div class="section-image">
+                <img src ="img/게시판.jpg" width="600" height="auto"></div>
+            <div class="section-text">
+                <h2>다른 운동인들과 소통하며 의견을 나누어요</h2>
+                <p>운동에 대한 경험을 공유하고, 커뮤니티에서 영감을 받아 더 건강한 삶을 추구하세요.</p>
+                <button class="section-btn">게시판</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 운동일지 섹션 -->
+    <section class="section-container reverse">
+        <div class="content">
+            <div class="section-image">
+                <img src ="img/운동기록.jpg" width="600" height="336.49"></div>
+            <div class="section-text">
+                <h2>나만의 운동일지를 기록해봐요</h2>
+                <p>운동을 기록하고 자신의 성장 과정을 확인할 수 있어요. 일지를 통해 운동을 지속할 동기를 얻으세요.</p>
+                <button class="section-btn">기록하기</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 운동방법 섹션 -->
+    <section class="section-container">
+        <div class="content">
+            <div class="section-image">
+                <img src ="img/런닝머신.jpg" width="600" height="336.49"></div>
+            <div class="section-text">
+                <h2>여러가지 운동방법에 대해 알아봐요</h2>
+                <p>다양한 운동 방법을 알아보고, 자신에게 맞는 운동 루틴을 찾아보세요.</p>
+                <button class="section-btn">시작하기</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 식단 기록 섹션 -->
+    <section class="section-container reverse">
+        <div class="content">
+            <div class="section-image">
+                <img src ="img/식단.jpg" width="600" height="336.49"></div>
+            <div class="section-text">
+                <h2>식단 기록 또는 식단 짜주기</h2>
+                <p>건강한 식단 계획을 세우고, 자신의 식단을 기록하며 균형 잡힌 생활을 유지하세요.</p>
+                <button class="section-btn">식단 관리</button>
+            </div>
+        </div>
+    </section>
+    </main>
 </body>
 </html>
